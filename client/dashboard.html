@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+  <h2>Create Task</h2>
+  <input id="title" placeholder="Title"><br>
+  <input id="description" placeholder="Description"><br>
+  <button class="primary" onclick="createTask()">Create</button>
+  <button class="danger" onclick="logout()">Logout</button>
+  <hr>
+
+  <h2>My Tasks</h2>
+  <button onclick="loadTasks()">Refresh</button>
+  <ul id="taskList"></ul>
+  
+
+  <script src="script.js"></script>
+  <body onload="loadTasks()"></body>
+    </div>
+</body>
+</html>
